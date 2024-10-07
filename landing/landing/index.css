@@ -1,0 +1,167 @@
+
+html{
+    scroll-behavior: smooth;
+}
+body {
+    
+    height: 125vh;
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+    font-family: sans-serif;
+    margin-top: 80px;
+    padding: 0px;
+    margin:0px;
+    margin:0px;
+}
+
+main {
+    color: white;
+}
+/* Navigation Section */
+header {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 15px 0 rgb(130, 130, 130);
+}
+
+header * {
+    display: inline;
+}
+header img{
+    width: 60px;
+    margin-left: 45vw;
+}
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: left;
+}
+
+#home::before{ 
+    content: "";
+    position: absolute;
+    background: url('AdobeStock_272168909_Preview.jpeg') no-repeat center center/cover;
+    height: 642px;
+    box-shadow: 0px 10px 20px black;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+
+#home h1{
+    color:rgb(1, 1, 1);
+    text-align: right;
+    font-family: 'Bree Serif', serif;
+    font-family: "Pacifico", cursive;
+    font-size: 100px;
+    text-shadow: 10px;
+}
+
+#home p{
+    color:rgb(0, 0, 0);
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+
+/* Container Section */
+.container {
+    display: flex; 
+    align-items: center; 
+    margin-top: 10px;
+}
+
+.text {
+    margin-left: 30px; 
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    font-family: "Pacifico", cursive;
+    /* background-image: url('beatriz-perez-moya-XN4T2PVUUgk-unsplash.jpg'); */
+    background-color: rgb(3, 97, 163);
+    border-radius: 10px;
+}
+.container img{
+    border: 2px solid white;
+    border-radius: 20%;
+    box-shadow: 2px 3px 5px black;
+}
+
+/* Services Section */
+.h-primarycenter{
+    color: rgb(0, 0, 0);
+    margin-left: 60px;
+    text-decoration: underline;
+    font-size: 50px;
+}
+#services{
+    margin: 34px;
+    margin-left: 100px;
+    display: flex;
+    text-decoration: none;
+}
+#services .box{ 
+    width: 620px;
+    height: 430px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 5px 0px 20px rgb(105, 105, 105);
+  border-radius: 8px;
+  margin-bottom: 25px;
+  margin: 20px;
+  overflow:hidden;
+  
+}
+
+#services .box img{ 
+   height:350px;
+   width: 620px;
+   box-shadow: 0px 3px 5px rgb(104, 103, 103);
+   
+   /* border-radius: 50%; */
+}
+#services .box video:hover{
+    transform: scale(1.05);
+    width: 620px;
+    height:350px;
+    transition: 1s;
+}
+  
+#services .h-secondarycenter{
+    color:rgb(0, 0, 0);
+    text-decoration: underline;
+    text-align: center;
+    padding: 0.75px 0px;
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: 'Bree Serif', serif;
+    text-decoration: none;
+}
+footer{
+    margin: 0;
+    padding: 0;
+    /* text-align: center; */
+    background-color: black;
+    color: white;
+}
+footer p{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width:500px) {
+    header{
+        background-color:blue;
+    }
+    
+}
